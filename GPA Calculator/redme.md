@@ -28,7 +28,7 @@ The GPA for each course is determined based on the course score using the follow
 The implementation includes a main function that takes user input for the number of courses, course hours, and scores. It then calculates the GPA and degree percentage. The `gpaOfCourseCalculator` function is used to determine the GPA for each course based on the provided score.
 
 ## How to Use
-1. Clone the repository: `git clone <https://github.com/Salahbendary/practicingC>`
+1. Clone the repository: `git clone https://github.com/Salahbendary/practicingC`
 2. Compile the code: `gcc GPA_Calculator.c -o GPA_Calculator`
 3. Run the executable: `./GPA_Calculator`
 
