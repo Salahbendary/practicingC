@@ -14,24 +14,24 @@
 #include <stdio.h>
 #include "std_types.h"
 
-int countHoles(uint16 u8firstNumb) {
+int countHoles(uint16 u16firstNumb) {
 	uint8 u8oneDigit;
 	uint8 u8countHoles = 0;
-	while(u8firstNumb!=0) {
-		u8oneDigit = u8firstNumb%10;
+	while(u16firstNumb!=0) {
+		u8oneDigit = u16firstNumb%10;
 		if (u8oneDigit == 8) {u8countHoles+=2;}
 		else if((u8oneDigit == 0) || (u8oneDigit == 4) ||
 				(u8oneDigit == 6) ||(u8oneDigit == 9)) {
 			u8countHoles++;
 		}
-		u8firstNumb/=10;
+		u16firstNumb/=10;
 	}
 	return u8countHoles;
 }
 int main () {
-	uint16 u8NumberOne = 819;
+	uint16 u16NumberOne = 819;
 	uint8 u8result;
-	u8result = countHoles(u8NumberOne);
+	u8result = countHoles(u16NumberOne);
 	printf("Count of Holes = %d",u8result);
 	return 0;
 }
